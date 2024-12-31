@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgygkbtm0burn"]
+
+[ext_resource type="Script" path="res://addons/quiver_leaderboards/leaderboard_ui.gd" id="1_3mlof"]
+[ext_resource type="FontFile" uid="uid://dpay43l71bh2h" path="res://fonts/LilitaOne-Regular.ttf" id="2_jpkkp"]
+[ext_resource type="FontFile" uid="uid://cltp4tyavayb1" path="res://fonts/Acme-Regular.ttf" id="3_aw6ya"]
+[ext_resource type="FontFile" uid="uid://c6ku1ert18wyb" path="res://fonts/AbrilFatface-Regular.ttf" id="4_omkj0"]
+
+[node name="LeaderboardUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_3mlof")
+leaderboard_id = "charlie-runn-main-SgU7"
+current_player_highlight_color = Color(0.376471, 0.368627, 0.913725, 1)
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+modulate = Color(0.533333, 0.894118, 0.596078, 1)
+self_modulate = Color(0.52549, 0.537255, 0.67451, 1)
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+theme_override_fonts/font = ExtResource("2_jpkkp")
+text = "Hall Of Fame"
+horizontal_alignment = 1
+
+[node name="Nav" type="HBoxContainer" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="PrevButton" type="Button" parent="PanelContainer/VBoxContainer/Nav"]
+unique_name_in_owner = true
+layout_mode = 2
+disabled = true
+text = " < "
+flat = true
+
+[node name="ScoresLabel" type="Label" parent="PanelContainer/VBoxContainer/Nav"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+theme_override_fonts/font = ExtResource("3_aw6ya")
+text = "Scores"
+horizontal_alignment = 1
+
+[node name="NextButton" type="Button" parent="PanelContainer/VBoxContainer/Nav"]
+unique_name_in_owner = true
+layout_mode = 2
+disabled = true
+text = " > "
+flat = true
+
+[node name="ScoreList" type="Tree" parent="PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/title_button_font = ExtResource("3_aw6ya")
+theme_override_fonts/font = ExtResource("4_omkj0")
+columns = 3
+column_titles_visible = true
+allow_search = false
+hide_folding = true
+hide_root = true
+select_mode = 1
+
+[node name="goback" type="Button" parent="."]
+layout_mode = 0
+offset_left = 514.0
+offset_top = 659.0
+offset_right = 752.0
+offset_bottom = 705.0
+theme_override_fonts/font = ExtResource("2_jpkkp")
+text = "Go Back"
+flat = true
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Nav/PrevButton" to="." method="_on_prev_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Nav/NextButton" to="." method="_on_next_button_pressed"]

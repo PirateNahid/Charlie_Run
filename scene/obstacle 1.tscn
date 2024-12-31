@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1nrhro3imqof"]
+
+[ext_resource type="Texture2D" uid="uid://dhj2pkyl3envv" path="res://assets/boots.png" id="1_jpi3g"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(56, 53)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-17, 7)
+scale = Vector2(0.0709459, 0.0709459)
+texture = ExtResource("1_jpi3g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-18, 7)
+shape = SubResource("1")

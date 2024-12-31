@@ -1,0 +1,13 @@
+res://scene/game.tscn::5aacdc460dbfd974aef98c8ece0e4f04::1735298575::res://.godot/exported/133200997/export-caa10c3bd03e8ed3318171f5303f6366-game.scn
+res://scene/ground.tscn::35a7488b31e417201f1cf70ec0981db0::1735298575::res://.godot/exported/133200997/export-0a2b8cb869ddb490242f6e2d49a313b8-ground.scn
+res://scene/GroundSpawner.tscn::7cc7bfd2dd75fd9160de6bf74a38062a::1720508650::res://.godot/exported/133200997/export-f956d2e039e260eddd2b68024bbc6f0a-GroundSpawner.scn
+res://scene/mainmenu.tscn::cea00cd9804e2949aeb1a8cb93043e14::1735298575::res://.godot/exported/133200997/export-0c94eed6dddca04e0c669db8028104f6-mainmenu.scn
+res://scene/obstacle 1.tscn::63f84180b4076ee9068b0d5ad47db36c::1735298576::res://.godot/exported/133200997/export-6f4b0fa9e7ff00232f626d027d41b0ff-obstacle 1.scn
+res://scene/obstacle 2.tscn::c9777a5b24fb33fec4c573d8aabef85c::1735298575::res://.godot/exported/133200997/export-a40529e922eb1d81d5ef4f8f3d38268d-obstacle 2.scn
+res://scene/player.tscn::cb3d059dfffe2cf6568ef67865b87fac::1735298575::res://.godot/exported/133200997/export-34afcb3bda2393b8f6a0cd71512aeb81-player.scn
+res://scene/splash.tscn::7f5a460e221ee2b4468a73c55a01056e::1735298575::res://.godot/exported/133200997/export-dad21258390418e430a5047554595ad5-splash.scn
+res://default_env.tres::287601fb52fff1cf3e2bf84e5259a857::1735298576::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
+res://addons/quiver_leaderboards/leaderboards.tscn::a340c73c04a84f1f4efebc330e731244::1735202168::res://.godot/exported/133200997/export-68845c2701a0ca6f7775e268f9c682c9-leaderboards.scn
+res://addons/quiver_leaderboards/leaderboard_ui.tscn::89aebba888b3aecead1942d07da8861d::1735298575::res://.godot/exported/133200997/export-0532581f5e9199ba4066ea3cfcd4386b-leaderboard_ui.scn
+res://addons/quiver_player_accounts/player_accounts.tscn::eb46fe40c870786162883f61de955d2d::1735202183::res://.godot/exported/133200997/export-6999a9cd268abc6c5c728d38a9f29b08-player_accounts.scn
+res://scene/gameover.tscn::e2e45af581524eb6dab3f0e47ffbabad::1735298576::res://.godot/exported/133200997/export-564b46fb6a77d4ba5941e3b4fae9e24b-gameover.scn
